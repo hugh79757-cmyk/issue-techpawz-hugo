@@ -1,0 +1,28 @@
+<div style="max-width:500px; margin:1.5rem auto; padding:1.5rem; background:#f0fff4; border-radius:12px; text-align:center;">
+  <h3>📏 인치 ➡ 센티미터</h3>
+  <input type="number" id="inchInput" placeholder="인치 입력" step="0.01"
+    oninput="convertInchToCm(this.value)"
+    style="padding:10px; width:150px; font-size:16px; margin:8px;">
+  <p id="cmResult" style="margin-top:12px; font-size:18px; font-weight:bold; color:#2c3e50;">센티미터: -</p>
+</div>
+
+<hr style="max-width:500px; margin:1rem auto; border:1px dashed #ccc;">
+
+<div style="max-width:500px; margin:1.5rem auto; padding:1.5rem; background:#fff8f0; border-radius:12px; text-align:center;">
+  <h3>📏 센티미터 ➡ 인치</h3>
+  <input type="number" id="cmInput" placeholder="센티미터 입력" step="0.01"
+    oninput="convertCmToInch(this.value)"
+    style="padding:10px; width:150px; font-size:16px; margin:8px;">
+  <p id="inchResult" style="margin-top:12px; font-size:18px; font-weight:bold; color:#2c3e50;">인치: -</p>
+</div>
+
+<script>
+function convertInchToCm(inch) {
+  var cm = (parseFloat(inch) * 2.54).toFixed(2);
+  document.getElementById("cmResult").innerText = "센티미터: " + (isNaN(cm) ? "-" : cm + " cm");
+}
+function convertCmToInch(cm) {
+  var inch = (parseFloat(cm) / 2.54).toFixed(2);
+  document.getElementById("inchResult").innerText = "인치: " + (isNaN(inch) ? "-" : inch + " inch");
+}
+</script>

@@ -1,0 +1,12 @@
+[article]
+  showAuthor = false
+  showAuthorBottom = false
+  showDate = true
+  showReadingTime = true
+  showTableOfContents = true
+  showTaxonomies = true
+  showRelatedContent = true
+  relatedContentLimit = 5
+
+[list]
+  thumbnailAspectRatio = "1/1"

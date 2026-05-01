@@ -1,0 +1,8 @@
+public/
+resources/
+.hugo_build.lock
+.wrangler/
+all_slugs.txt
+*.bak
+*.wpress
+*.xml

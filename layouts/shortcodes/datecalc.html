@@ -1,0 +1,78 @@
+<div style="max-width:500px; margin:1.5rem auto; padding:1.5rem; background:#f0f8ff; border-radius:12px; text-align:center;">
+  <h3>📅 날짜 계산기</h3>
+  <label>시작 날짜:</label><br>
+  <input type="date" id="startDate" style="padding:8px; font-size:16px; margin:8px 0;"><br>
+  <label>더할 일수:</label><br>
+  <input type="number" id="daysToAdd" placeholder="예: 100" style="padding:8px; font-size:16px; margin:8px 0; width:150px;"><br><br>
+  <button onclick="calculateDate()" style="padding:10px 24px; background:#4a90d9; color:white; border:none; border-radius:8px; cursor:pointer; font-size:15px;">계산하기</button>
+  <p id="dateResult" style="margin-top:16px; font-size:18px; font-weight:bold; color:#2c3e50;"></p>
+</div>
+
+<div style="max-width:500px; margin:1.5rem auto; padding:1.5rem; background:#f5f0ff; border-radius:12px; text-align:center;">
+  <h3>📅 오늘날짜 계산기</h3>
+  <label>과거 날짜:</label><br>
+  <input type="date" id="todayCalcPastDate" style="padding:8px; font-size:16px; margin:8px 0;"><br><br>
+  <button onclick="calculateDaysFromPastToToday()" style="padding:10px 24px; background:#7c5cbf; color:white; border:none; border-radius:8px; cursor:pointer; font-size:15px;">오늘까지 며칠 지났는지 계산</button>
+  <p id="todayCalcResult" style="margin-top:16px; font-size:18px; font-weight:bold; color:#2c3e50;"></p>
+</div>
+
+<div style="max-width:500px; margin:1.5rem auto; padding:1.5rem; background:#fff5f0; border-radius:12px; text-align:center;">
+  <h3>🧮 나이 계산기</h3>
+  <label>생년월일:</label><br>
+  <input type="date" id="birthDate" style="padding:8px; font-size:16px; margin:8px 0;"><br><br>
+  <button onclick="calculateAge()" style="padding:10px 24px; background:#e67e22; color:white; border:none; border-radius:8px; cursor:pointer; font-size:15px;">나이 계산하기</button>
+  <p id="ageResult" style="margin-top:16px; font-size:18px; font-weight:bold; color:#2c3e50;"></p>
+</div>
+
+<script>
+function calculateDate() {
+  var startDate = new Date(document.getElementById("startDate").value);
+  var days = parseInt(document.getElementById("daysToAdd").value, 10);
+  if (isNaN(startDate.getTime()) || isNaN(days)) {
+    document.getElementById("dateResult").innerText = "올바른 날짜와 일수를 입력해 주세요.";
+    return;
+  }
+  var resultDate = new Date(startDate);
+  resultDate.setDate(resultDate.getDate() + days);
+  var yyyy = resultDate.getFullYear();
+  var mm = ("0" + (resultDate.getMonth() + 1)).slice(-2);
+  var dd = ("0" + resultDate.getDate()).slice(-2);
+  document.getElementById("dateResult").innerText = "결과 날짜: " + yyyy + "-" + mm + "-" + dd;
+}
+
+function calculateDaysFromPastToToday() {
+  var inputDate = document.getElementById("todayCalcPastDate").value;
+  if (!inputDate) {
+    document.getElementById("todayCalcResult").innerText = "날짜를 입력해 주세요.";
+    return;
+  }
+  var pastDate = new Date(inputDate);
+  var today = new Date();
+  today.setHours(0, 0, 0, 0);
+  pastDate.setHours(0, 0, 0, 0);
+  var diffTime = today.getTime() - pastDate.getTime();
+  var diffDays = Math.floor(diffTime / (1000 * 60 * 60 * 24));
+  if (diffDays < 0) {
+    document.getElementById("todayCalcResult").innerText = "미래 날짜는 입력할 수 없습니다.";
+  } else {
+    document.getElementById("todayCalcResult").innerText = "총 " + diffDays + "일이 지났습니다.";
+  }
+}
+
+function calculateAge() {
+  var birthValue = document.getElementById("birthDate").value;
+  if (!birthValue) {
+    document.getElementById("ageResult").innerText = "생년월일을 입력해 주세요.";
+    return;
+  }
+  var birth = new Date(birthValue);
+  var today = new Date();
+  var manAge = today.getFullYear() - birth.getFullYear();
+  var m = today.getMonth() - birth.getMonth();
+  if (m < 0 || (m === 0 && today.getDate() < birth.getDate())) {
+    manAge--;
+  }
+  var koreanAge = today.getFullYear() - birth.getFullYear() + 1;
+  document.getElementById("ageResult").innerHTML = "만 나이: <strong>" + manAge + "세</strong><br>한국 나이: <strong>" + koreanAge + "세</strong>";
+}
+</script>

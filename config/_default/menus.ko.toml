@@ -1,0 +1,19 @@
+[[main]]
+  name = "전체"
+  pageRef = "posts"
+  weight = 10
+
+[[main]]
+  name = "Business"
+  pageRef = "categories/business"
+  weight = 20
+
+[[main]]
+  name = "AdSense"
+  pageRef = "categories/adsense"
+  weight = 30
+
+[[main]]
+  name = "Technology"
+  pageRef = "categories/technology"
+  weight = 40

@@ -1,0 +1,52 @@
+baseURL = "https://issue.techpawz.com/"
+languageCode = "ko-KR"
+defaultContentLanguage = "ko"
+title = "테크포우즈 Issue"
+theme = "blowfish"
+[pagination]
+  pagerSize = 10
+
+[permalinks]
+  posts = "/:slug/"
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+
+[params]
+  colorScheme = "ocean"
+  defaultAppearance = "light"
+  autoSwitchAppearance = true
+  enableSearch = true
+  enableCodeCopy = true
+  mainSections = ["posts"]
+
+[params.homepage]
+  layout = "card"
+  showRecent = true
+  recentLimit = 10
+
+[params.article]
+  showDate = true
+  showAuthor = false
+  showReadingTime = true
+  showTableOfContents = true
+  showTaxonomies = true
+  showWordCount = false
+
+[params.footer]
+  showCopyright = true
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[markup.goldmark.renderer]
+  unsafe = true
+
+ignoreLogs = ['warning-goldmark-raw-html']
+
+[author]
+  name = "테크포우즈"
+
+[params.header]
+  showLanguageToggle = false
