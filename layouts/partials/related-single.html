@@ -1,0 +1,42 @@
+{{ $currentPage := . }}
+{{ $related := slice }}
+{{ $currentTags := .Params.tags | default slice }}
+{{ if $currentTags }}
+  {{ range $tag := $currentTags }}
+    {{ range where (index site.Taxonomies.tags $tag).Pages ".Permalink" "!=" $currentPage.Permalink }}
+      {{ $related = $related | append . }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+{{ if lt (len $related) 1 }}
+  {{ $currentCats := .Params.categories | default slice }}
+  {{ range $cat := $currentCats }}
+    {{ range where (index site.Taxonomies.categories $cat).Pages ".Permalink" "!=" $currentPage.Permalink }}
+      {{ $related = $related | append . }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+{{ $related = $related | uniq }}
+{{ $currentPermalink := $currentPage.Permalink }}
+{{ $picked := slice }}
+{{ range $related }}
+  {{ if and (lt (len $picked) 1) (ne .Permalink $currentPermalink) }}
+    {{ $picked = $picked | append . }}
+  {{ end }}
+{{ end }}
+{{ with $picked }}
+{{ range . }}
+<div class="my-4 not-prose">
+  <a href="{{ .RelPermalink }}"
+     style="display:flex; align-items:center; gap:12px; padding:12px 16px; border-radius:8px; border:1px solid #e5e7eb; background:#f9fafb; text-decoration:none; transition:opacity 0.2s;">
+    <span style="flex-shrink:0;">🔗</span>
+    <div style="display:flex; flex-direction:column; min-width:0;">
+      {{ with .Params.categories }}
+      <span style="font-size:0.75rem; color:#6366f1; font-weight:600; margin-bottom:2px;">{{ index . 0 }}</span>
+      {{ end }}
+      <span style="font-size:0.875rem; font-weight:500; color:#1f2937; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">{{ .Title }}</span>
+    </div>
+  </a>
+</div>
+{{ end }}
+{{ end }}

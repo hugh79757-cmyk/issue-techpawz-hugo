@@ -1,0 +1,20 @@
+{{ $limit := 2 }}
+{{ $related := (.Site.RegularPages.Related . ) | first $limit }}
+{{ with $related }}
+<div class="my-6 not-prose">
+  <div class="flex flex-col gap-2">
+    {{ range . }}
+    <a href="{{ .RelPermalink }}"
+       style="display:flex; align-items:center; gap:12px; padding:12px 16px; border-radius:8px; border:1px solid #e5e7eb; background:#f9fafb; text-decoration:none; transition:opacity 0.2s;">
+      <span style="flex-shrink:0;">🔗</span>
+      <div style="display:flex; flex-direction:column; min-width:0;">
+        {{ with .Params.categories }}
+        <span style="font-size:0.75rem; color:#6366f1; font-weight:600; margin-bottom:2px;">{{ index . 0 }}</span>
+        {{ end }}
+        <span style="font-size:0.875rem; font-weight:500; color:#1f2937; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">{{ .Title }}</span>
+      </div>
+    </a>
+    {{ end }}
+  </div>
+</div>
+{{ end }}
