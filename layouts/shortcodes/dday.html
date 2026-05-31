@@ -1,17 +1,24 @@
-<div style="text-align:center; padding:20px;">
-  <h2>❤️ 커플 디데이 계산기 ❤️</h2>
+<div class="dday-outer">
+  <div class="dday-card">
 
-  <input type="date" id="startdate" style="padding:8px; font-size:16px;">
-  <br><br>
+    <h2 class="dday-title">💗 커플 디데이 계산기 💗</h2>
 
-  <button onclick="calculateLoveDays()" 
-    style="padding:10px 20px; background:#ff69b4; color:white; border:none; border-radius:8px; cursor:pointer;">
-    오늘은 몇일째? 💑
-  </button>
+    <div class="dday-input-group">
+      <label class="dday-label" for="startdate">사귀기 시작한 날</label>
+      <input type="date" id="startdate" class="dday-date-input">
+    </div>
 
-  <p id="resultLoveDay" style="margin-top:20px; font-size:18px;"></p>
-  <div id="anniversaryList"></div>
-  <div id="shareLink"></div>
+    <button class="dday-btn" onclick="calculateLoveDays()">
+      오늘은 몇 일째? 💑
+    </button>
+
+    <p id="resultLoveDay" class="dday-result"></p>
+
+    <div id="anniversaryList" class="dday-anniversary"></div>
+
+    <div id="shareLink" class="dday-share"></div>
+
+  </div>
 </div>
 
 <script>
@@ -26,19 +33,34 @@ function calculateLoveDays() {
     return;
   }
 
-  const start = new Date(inputDate);
+  const [sy, sm, sd] = inputDate.split('-').map(Number);
+  const start = new Date(sy, sm - 1, sd);
+
   const today = new Date();
+  today.setHours(0, 0, 0, 0);
+
   const diffTime = today - start;
-  const days = Math.floor(diffTime / (1000*60*60*24)) + 1;
+  const days = Math.floor(diffTime / (1000 * 60 * 60 * 24)) + 1;
 
-  result.innerHTML = `❤️ 우리가 사귄 지 ${days}일째 되는 날이에요! ❤️`;
+  result.innerHTML = `우리가 사귄 지<br><span class="dday-days">${days}일째</span><br>되는 날이에요 💕`;
 
-  const milestones = [100,200,300,365,500,1000];
-  let html = "";
+  const milestones = [100, 200, 300, 365, 500, 1000];
+  const icons = { 100: '🌸', 200: '💐', 300: '🌹', 365: '🎂', 500: '💎', 1000: '👑' };
+  let html = '<p class="dday-anniversary-title">✨ 기념일 미리보기</p>';
 
   milestones.forEach(day => {
-    const future = new Date(start.getTime() + (day-1)*86400000);
-    html += `✨ ${day}일: ${future.getFullYear()}-${future.getMonth()+1}-${future.getDate()}<br>`;
+    const future = new Date(start.getTime() + (day - 1) * 86400000);
+    const y = future.getFullYear();
+    const m = String(future.getMonth() + 1).padStart(2, '0');
+    const d = String(future.getDate()).padStart(2, '0');
+    const isPast = future < today;
+    html += `
+      <div class="dday-anniversary-item${isPast ? ' dday-past' : ''}">
+        <span class="dday-ann-icon">${icons[day]}</span>
+        <span class="dday-ann-day">${day}일</span>
+        <span class="dday-ann-date">${y}-${m}-${d}</span>
+        ${isPast ? '<span class="dday-ann-badge">완료</span>' : ''}
+      </div>`;
   });
 
   anniversary.innerHTML = html;
@@ -46,19 +68,21 @@ function calculateLoveDays() {
   const link = window.location.href.split('?')[0] + '?date=' + encodeURIComponent(inputDate);
 
   share.innerHTML = `
-    <p>🔗 공유하기</p>
-    <input type="text" id="copyLink" value="${link}" readonly style="width:90%; padding:6px;">
-    <br><br>
-    <button onclick="copyToClipboard()">📋 링크 복사</button>
-    <p id="copyMsg"></p>
+    <div class="dday-share-inner">
+      <p class="dday-share-title">🔗 공유하기</p>
+      <input type="text" id="copyLink" value="${link}" readonly class="dday-share-input">
+      <button onclick="copyToClipboard()" class="dday-copy-btn">📋 링크 복사</button>
+      <p id="copyMsg" class="dday-copy-msg"></p>
+    </div>
   `;
-  // 하트 애니메이션
+
   for (let i = 0; i < 12; i++) {
     const heart = document.createElement('div');
-    heart.innerHTML = ['💖','💕','❤️','💗','💓'][Math.floor(Math.random()*5)];
+    heart.innerHTML = ['💖', '💕', '❤️', '💗', '💓'][Math.floor(Math.random() * 5)];
+    const startTop = window.innerHeight * (0.6 + Math.random() * 0.4);
     Object.assign(heart.style, {
       position: 'fixed',
-      top: Math.random() * window.innerHeight + 'px',
+      top: startTop + 'px',
       left: Math.random() * window.innerWidth + 'px',
       fontSize: Math.random() * 20 + 20 + 'px',
       pointerEvents: 'none',
@@ -73,9 +97,11 @@ function calculateLoveDays() {
 
 function copyToClipboard() {
   const input = document.getElementById("copyLink");
-  input.select();
-  document.execCommand("copy");
-  document.getElementById("copyMsg").innerText = "복사 완료!";
+  navigator.clipboard.writeText(input.value).then(() => {
+    document.getElementById("copyMsg").innerText = "복사 완료!";
+  }).catch(() => {
+    document.getElementById("copyMsg").innerText = "복사에 실패했어요. 직접 선택해서 복사해 주세요.";
+  });
 }
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -88,10 +114,249 @@ window.addEventListener('DOMContentLoaded', () => {
   }
 });
 </script>
+
 <style>
+/* ── 전체 래퍼 ── */
+.dday-outer {
+  display: flex;
+  justify-content: center;
+  padding: 24px 16px;
+}
+
+.dday-card {
+  width: 100%;
+  max-width: 480px;
+  background: linear-gradient(160deg, #fff5f8 0%, #fce4ec 100%);
+  border-radius: 24px;
+  box-shadow: 0 8px 32px rgba(233, 30, 99, 0.12), 0 2px 8px rgba(233, 30, 99, 0.08);
+  padding: 32px 24px 28px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+/* ── 타이틀 ── */
+.dday-title {
+  margin: 0 0 28px;
+  font-size: 1.5rem;
+  font-weight: 800;
+  background: linear-gradient(90deg, #e91e63, #c2185b, #ad1457);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  letter-spacing: -0.5px;
+}
+
+/* ── 날짜 입력 ── */
+.dday-input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.dday-label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #c2185b;
+  text-align: left;
+}
+
+.dday-date-input {
+  width: 100%;
+  min-height: 48px;
+  padding: 0 14px;
+  font-size: 1rem;
+  border: 2px solid #f48fb1;
+  border-radius: 12px;
+  background: #fff;
+  color: #4a4a4a;
+  outline: none;
+  box-sizing: border-box;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+.dday-date-input:focus {
+  border-color: #e91e63;
+  box-shadow: 0 0 0 4px rgba(233, 30, 99, 0.15);
+}
+
+/* ── 계산 버튼 ── */
+.dday-btn {
+  width: 100%;
+  min-height: 52px;
+  padding: 0 20px;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #fff;
+  background: linear-gradient(135deg, #f06292, #e91e63, #c2185b);
+  border: none;
+  border-radius: 14px;
+  cursor: pointer;
+  letter-spacing: 0.3px;
+  box-shadow: 0 4px 16px rgba(233, 30, 99, 0.3);
+  transition: transform 0.18s, box-shadow 0.18s;
+}
+
+.dday-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(233, 30, 99, 0.38);
+}
+
+.dday-btn:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 8px rgba(233, 30, 99, 0.25);
+}
+
+/* ── 결과 텍스트 ── */
+.dday-result {
+  margin: 24px 0 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #880e4f;
+  line-height: 1.7;
+  min-height: 0;
+}
+
+.dday-result:empty {
+  margin: 0;
+}
+
+.dday-days {
+  display: inline-block;
+  font-size: 2.2rem;
+  font-weight: 900;
+  background: linear-gradient(90deg, #e91e63, #ad1457);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  line-height: 1.2;
+}
+
+/* ── 기념일 목록 ── */
+.dday-anniversary {
+  margin-top: 24px;
+  text-align: left;
+}
+
+.dday-anniversary-title {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #c2185b;
+  margin: 0 0 12px;
+  text-align: center;
+}
+
+.dday-anniversary-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #fff;
+  border: 1.5px solid #fce4ec;
+  border-radius: 12px;
+  padding: 12px 14px;
+  margin-bottom: 8px;
+  box-shadow: 0 2px 6px rgba(233, 30, 99, 0.06);
+}
+
+.dday-anniversary-item.dday-past {
+  background: #f8f8f8;
+  border-color: #e0e0e0;
+  opacity: 0.65;
+}
+
+.dday-ann-icon {
+  font-size: 1.25rem;
+  flex-shrink: 0;
+}
+
+.dday-ann-day {
+  font-weight: 700;
+  color: #e91e63;
+  font-size: 0.95rem;
+  min-width: 44px;
+}
+
+.dday-ann-date {
+  flex: 1;
+  color: #555;
+  font-size: 0.95rem;
+}
+
+.dday-ann-badge {
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: #aaa;
+  background: #efefef;
+  border-radius: 999px;
+  padding: 2px 8px;
+  flex-shrink: 0;
+}
+
+/* ── 공유 영역 ── */
+.dday-share {
+  margin-top: 20px;
+}
+
+.dday-share-inner {
+  background: #fff;
+  border: 1.5px solid #fce4ec;
+  border-radius: 16px;
+  padding: 18px 16px;
+  box-shadow: 0 2px 8px rgba(233, 30, 99, 0.07);
+}
+
+.dday-share-title {
+  margin: 0 0 12px;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #c2185b;
+}
+
+.dday-share-input {
+  width: 100%;
+  min-height: 42px;
+  padding: 0 12px;
+  font-size: 0.82rem;
+  border: 1.5px solid #f48fb1;
+  border-radius: 10px;
+  background: #fff9fb;
+  color: #555;
+  outline: none;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+.dday-copy-btn {
+  width: 100%;
+  min-height: 46px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #e91e63;
+  background: #fff;
+  border: 2px solid #e91e63;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background 0.18s, color 0.18s;
+}
+
+.dday-copy-btn:hover {
+  background: #fce4ec;
+}
+
+.dday-copy-msg {
+  margin: 10px 0 0;
+  font-size: 0.85rem;
+  color: #e91e63;
+  font-weight: 600;
+  min-height: 1.2em;
+}
+
+/* ── 하트 애니메이션 ── */
 @keyframes heartFloat {
-  0% { transform: translateY(0) scale(1); opacity: 0.85; }
-  50% { transform: translateY(-60px) scale(1.2); opacity: 0.6; }
-  100% { transform: translateY(-140px) scale(0.5); opacity: 0; }
+  0%   { transform: translateY(0) scale(1);       opacity: 0.85; }
+  50%  { transform: translateY(-80px) scale(1.2); opacity: 0.6;  }
+  100% { transform: translateY(-200px) scale(0.5); opacity: 0;   }
 }
 </style>

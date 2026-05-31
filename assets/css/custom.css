@@ -1,5 +1,26 @@
+/* ─── 썸네일 비율 ─── */
 .thumbnail {
   aspect-ratio: 1 / 1 !important;
   width: 200px !important;
   min-width: 200px !important;
+}
+
+/* ─── 링크 색상 (noir 스킴 보완) ─── */
+
+/* 라이트 모드 - 본문 링크 */
+.prose a {
+  color: #007fa3 !important;        /* secondary-600 계열 청록색 */
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.prose a:hover {
+  color: #00a5cf !important;        /* secondary-500 */
+}
+
+/* 다크 모드 - 본문 링크 */
+html.dark .prose a {
+  color: #00d4ff !important;        /* 다크모드에서 밝은 하늘색 */
+}
+html.dark .prose a:hover {
+  color: #69e1ff !important;        /* secondary-300 */
 }

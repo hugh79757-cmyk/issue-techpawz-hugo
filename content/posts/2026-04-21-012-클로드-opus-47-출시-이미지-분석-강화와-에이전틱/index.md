@@ -5,10 +5,7 @@ description: "클로드 AI의 최신 버전 Opus 4.7이 출시되었습니다. �
 draft: false
 tags: ["클로드 AI", "Opus 4.7", "미토스", "에이전틱 코딩", "이미지 분석"]
 categories: ["AI", "기술"]
-cover:
-  image: "thumbnail.webp"
-  alt: ""
-  hidden: false
+featureimage: "thumbnail.webp"
 ---
 
 클로드 AI의 최신 버전인 Opus 4.7이 4월 16일 출시되었습니다. 이번 업데이트에서는 이미지 분석 능력과 에이전틱 자율 작업 능력이 크게 향상되었으며, 사이버 보안 안전장치가 추가되었습니다. 또한, 아직 출시되지 않은 미토스 모델의 성능도 공개되어 많은 관심을 끌고 있습니다.
