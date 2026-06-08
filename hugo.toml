@@ -3,6 +3,7 @@ languageCode = "ko-KR"
 defaultContentLanguage = "ko"
 title = "테크포우즈 Issue"
 theme = "blowfish"
+themesDir = "/Users/twinssn/Projects/shared-themes"
 [pagination]
   pagerSize = 10
 
