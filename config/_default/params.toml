@@ -1,5 +1,8 @@
 disableImageOptimization = true
 colorScheme = "noir"
+defaultAppearance = "light"
+autoSwitchAppearance = false
+
 [article]
   showAuthor = false
   showAuthorBottom = false
