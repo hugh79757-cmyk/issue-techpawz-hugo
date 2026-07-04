@@ -1,0 +1,31 @@
+<script>
+(function() {
+  if (window._adsenseLazyLoaded) return;
+  window._adsenseLazyLoaded = true;
+
+  var observer = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting) {
+        var ad = entry.target;
+        if (ad.getAttribute('data-adsbygoogle-status') === 'pushed') return;
+        ad.setAttribute('data-adsbygoogle-status', 'pushed');
+        try {
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        } catch (e) {
+          console.error('AdSense push error:', e);
+        }
+        observer.unobserve(ad);
+      }
+    });
+  }, {
+    rootMargin: '100px 0px'
+  });
+
+  document.addEventListener('DOMContentLoaded', function() {
+    var ads = document.querySelectorAll('ins.adsbygoogle[data-ad-slot]');
+    ads.forEach(function(ad) {
+      observer.observe(ad);
+    });
+  });
+})();
+</script>
