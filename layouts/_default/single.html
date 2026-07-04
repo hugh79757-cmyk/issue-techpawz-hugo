@@ -47,20 +47,54 @@
       <div class="min-w-0 min-h-0 max-w-fit">
         {{ partial "series/series.html" . }}
         <div class="article-content max-w-prose mb-20">
-          <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-8772455780561463" data-ad-slot="3206195338" data-ad-format="auto" data-full-width-responsive="true"></ins>
-<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
           {{ $content := .Content }}
           {{ $paragraphs := split $content "</p>" }}
-          {{ $total := len $paragraphs }}
-          {{ $first := div $total 3 }}
-          {{ $second := mul (div $total 3) 2 }}
+          {{ $h2Parts := split $content "<h2" }}
+          {{ $totalP := len $paragraphs }}
+
+          {{ $isHighValue := or (eq .Section "cars") (eq .Section "finance") (eq .Section "insurance") (eq .Section "loan") (eq .Section "law") }}
+          {{ $maxAds := cond $isHighValue 3 2 }}
+
+          {{ $firstRelated := div $totalP 3 }}
+          {{ $secondRelated := mul (div $totalP 3) 2 }}
+
+          {{ $h2Count := 0 }}
+          {{ $adAfterFirstP := false }}
+          {{ $adAfterFirstH2 := false }}
+          {{ $adAfterThirdH2 := false }}
+
           {{ range $i, $p := $paragraphs }}
             {{ if gt (len $p) 0 }}{{ $p | safeHTML }}</p>{{ end }}
-            {{ if eq $i $first }}{{ partial "related-single.html" $ }}{{ end }}
-            {{ if eq $i $second }}{{ partial "related-single.html" $ }}{{ end }}
+
+            {{ if and (not $adAfterFirstP) (eq $i 0) }}
+              {{ partial "adsense/in-article.html" $ }}
+              {{ $adAfterFirstP = true }}
+            {{ end }}
+
+            {{ if eq $i $firstRelated }}
+              {{ partial "related-single.html" $ }}
+            {{ end }}
+
+            {{ if eq $i $secondRelated }}
+              {{ partial "related-single.html" $ }}
+            {{ end }}
           {{ end }}
-          <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-8772455780561463" data-ad-slot="3206195338" data-ad-format="auto" data-full-width-responsive="true"></ins>
-<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+
+          {{ range $i, $part := $h2Parts }}
+            {{ if gt $i 0 }}
+              {{ $h2Count = add $h2Count 1 }}
+              {{ if and (eq $h2Count 1) (not $adAfterFirstH2) }}
+                {{ partial "adsense/in-article.html" $ }}
+                {{ $adAfterFirstH2 = true }}
+              {{ end }}
+              {{ if and (eq $h2Count 3) (ge $.WordCount 800) (not $adAfterThirdH2) (ge $maxAds 3) }}
+                {{ partial "adsense/in-article.html" $ }}
+                {{ $adAfterThirdH2 = true }}
+              {{ end }}
+            {{ end }}
+          {{ end }}
+
+          {{ partial "adsense/leaderboard.html" . }}
           {{ $defaultReplyByEmail := site.Params.replyByEmail }}
           {{ $replyByEmail := default $defaultReplyByEmail .Params.replyByEmail }}
           {{ if $replyByEmail }}
