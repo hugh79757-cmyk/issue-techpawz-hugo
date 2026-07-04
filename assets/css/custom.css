@@ -24,3 +24,58 @@ html.dark .prose a {
 html.dark .prose a:hover {
   color: #69e1ff !important;        /* secondary-300 */
 }
+
+/* ========== AdSense 광고 레이아웃 ========== */
+.ad-inarticle { margin: 32px 0; min-height: 250px; text-align: center; }
+.ad-leaderboard { margin: 32px 0; text-align: center; min-height: 90px; }
+.ad-halfpage { position: sticky; top: 100px; min-height: 600px; }
+
+/* 모바일 하단 스티키 */
+.mobile-sticky-ad {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 9998;
+  background: rgba(255,255,255,0.95);
+  backdrop-filter: blur(4px);
+  text-align: center;
+  padding: 4px 0;
+  box-shadow: 0 -2px 8px rgba(0,0,0,0.1);
+  display: none;
+}
+.mobile-sticky-close {
+  position: absolute;
+  top: -24px;
+  right: 8px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 50%;
+  width: 22px;
+  height: 22px;
+  font-size: 12px;
+  line-height: 20px;
+  text-align: center;
+  cursor: pointer;
+  z-index: 9999;
+  color: #666;
+}
+
+/* 디바이스 분기 */
+@media (max-width: 768px) {
+  .desktop-only { display: none !important; }
+  .mobile-sticky-ad { display: block; }
+  .ad-inarticle { min-height: 200px; }
+}
+@media (min-width: 769px) {
+  .mobile-only { display: none !important; }
+  .mobile-sticky-ad { display: none !important; }
+}
+
+/* 광고 2개 연속 스태킹 방지 */
+.adsbygoogle + .adsbygoogle { display: none !important; }
+ins.adsbygoogle[data-ad-status="unfilled"] { display: none !important; }
+
+/* 다크모드 */
+.dark .mobile-sticky-ad { background: rgba(30,30,30,0.95); }
+.dark .mobile-sticky-close { background: #333; color: #ccc; border-color: #555; }

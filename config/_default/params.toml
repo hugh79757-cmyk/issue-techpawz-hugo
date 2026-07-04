@@ -17,3 +17,6 @@ autoSwitchAppearance = false
   thumbnailAspectRatio = "1/1"
 
 hotlinkFeatureImage = true
+
+[adsense]
+  client = "ca-pub-8772455780561463"
