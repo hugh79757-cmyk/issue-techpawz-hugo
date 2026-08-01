@@ -6,6 +6,7 @@ categories: [Business]
 tags: []
 draft: false
 description: ''
+thumbnail: "https://pub-2f5c7af1c303419a933069212bc25874.r2.dev/thumbnails/issue-techpawz/gpt-킬러.webp"
 ---
 
 GPT 킬러 - **AI 글쓰기 시대, ‘GPT 디텍터’로 진짜와 가짜를 가려내는 기술** - 요즘 온라인 커뮤니티나 블로그에서 ‘지피티 킬러(GPT Killer)’라는 말이 종종 등장하곤 합니다. 처음엔 챗GPT 같은 AI 언어모델을 대체하는 기술인가 싶지만, 실상은 다릅니다. 여기서 말하는 ‘지피티 킬러’는 바로 AI가 생성한 글을 탐지하는 GPT 디텍터(GPT Detector)를 가리키는 용어입니다. 즉, AI 글쓰기를 식별하고자 하는 움직임에서 등장한 감시자 역할의 기술이죠.

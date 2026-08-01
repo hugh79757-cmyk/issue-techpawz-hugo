@@ -6,6 +6,7 @@ categories: [Business]
 tags: []
 draft: false
 description: ''
+thumbnail: "https://pub-2f5c7af1c303419a933069212bc25874.r2.dev/thumbnails/issue-techpawz/kakaoupdate1.webp"
 ---
 
 [▶ 카카오톡 PC버전 다운로드](https://info.techpawz.com/kakaoupdate2/)

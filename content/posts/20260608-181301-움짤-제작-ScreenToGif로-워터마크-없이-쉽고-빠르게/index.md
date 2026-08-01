@@ -35,11 +35,11 @@ ScreenToGif는 다양한 분야에서 활용될 수 있습니다. 예를 들어 
 
 ## 자주 묻는 질문)
 
-**Q1. ScreenToGif는 정말 무료인가요?**
+<strong>Q1. ScreenToGif는 정말 무료인가요?</strong>
 
 네, ScreenToGif는 워터마크 없이 무료로 사용할 수 있습니다. 유료 버전은 추가 기능과 더 많은 저장 공간을 제공하지만, 기본 기능은 모두 무료로 이용 가능합니다.
 
-**Q2. ScreenToGif로 녹화한 영상은 어떤 파일 형식으로 저장할 수 있나요?**
+<strong>Q2. ScreenToGif로 녹화한 영상은 어떤 파일 형식으로 저장할 수 있나요?</strong>
 
 ScreenToGif는 GIF, APNG (Animation Portable Network Graphics), 그리고 일반 비디오 파일 형식(MP4 등)으로 저장할 수 있습니다. APNG 파일은 GIF보다 더 높은 압축률과 선명도를 제공하므로 선호하는 경우에 선택하여 저장할 수 있습니다.
 

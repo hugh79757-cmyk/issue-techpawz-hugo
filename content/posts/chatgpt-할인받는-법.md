@@ -6,6 +6,7 @@ categories: [Business]
 tags: []
 draft: false
 description: ''
+thumbnail: "https://pub-2f5c7af1c303419a933069212bc25874.r2.dev/thumbnails/issue-techpawz/chatgpt-할인받는-법.webp"
 ---
 
 ChatGPT 할인받는 법 - 요즘 ChatGPT 유료 요금제(Pro)의 가격이 부담되셨다면, 지금 꼭 확인해보세요. 일부 사용자에게만 제공되는 ‘3개월간 50% 할인 오퍼’가 숨겨진 메뉴에 등장하고 있습니다. 특별히 공지된 것도 아니고, 공식 블로그에도 언급되지 않아 많은 사람들이 모르고 지나치는 혜택인데요, **단 1분이면 내가 대상자인지 확인할 수 있는 방법**을 지금 바로 안내해드리겠습니다.

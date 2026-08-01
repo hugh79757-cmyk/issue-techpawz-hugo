@@ -6,6 +6,7 @@ categories: [Technology]
 tags: []
 draft: false
 description: ''
+thumbnail: "https://pub-2f5c7af1c303419a933069212bc25874.r2.dev/thumbnails/issue-techpawz/일래븐-랩스eleven-labs-구독-취소-방법.webp"
 ---
 
 일래븐 랩스(Eleven Labs) 구독 취소 방법 - Eleven Labs(일래븐 랩스)는 인공지능(AI) 기술을 활용해 **사람의 음성을 자연스럽게 생성하고 복제하는 음성 합성 플랫폼**입니다. 유튜브 콘텐츠 크리에이터가 늘어나면서 사용자의 유입이 꾸준하게 있는 서비스입니다. 2022년 설립된 미국 기반 스타트업으로, 음성 합성 분야에서 빠르게 성장하며 **가장 자연스러운 AI 보이스 생성 기술을 보유한 기업 중 하나**로 평가받고 있습니다.AI 음성 생성 서비스로 유명한 **Eleven Labs**는 유료 요금제(Starter, Creator, Pro 등)를 통해 다양한 음성 합성 기능을 제공합니다. 하지만 체험 후 더 이상 사용하지 않거나 다른 서비스로 전환하려는 경우, 구독을 취소해야 자동 결제가 이어지지 않습니다.

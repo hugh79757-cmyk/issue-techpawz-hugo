@@ -6,6 +6,7 @@ categories: [Business]
 tags: []
 draft: false
 description: ''
+thumbnail: "https://pub-2f5c7af1c303419a933069212bc25874.r2.dev/thumbnails/issue-techpawz/8gb-m1-맥북에어에-clawdbot-설치-후기-개인-ai-비서가-정말-필요할-2.webp"
 ---
 
 Clawdbot 공식 저장소는 [GitHub](https://github.com/clawdbot/clawdbot)에서 확인할 수 있으며, 로컬 AI 실행 도구 [Ollama](https://ollama.com/)와 함께 사용할 수 있습니다.

@@ -6,6 +6,7 @@ categories: [Business]
 tags: []
 draft: false
 description: ''
+thumbnail: "https://pub-2f5c7af1c303419a933069212bc25874.r2.dev/thumbnails/issue-techpawz/프롬프트-길이가-돈이다-ai-토큰-아끼는-실전-팁-5가지.webp"
 ---
 
 AI API를 업무에 활용하다 보면 비용이 생각보다 빠르게 늘어납니다. 특히 긴 문서를 처리하거나 대화가 길어지면 토큰 소모가 급격히 증가합니다.

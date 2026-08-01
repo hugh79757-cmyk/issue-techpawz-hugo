@@ -6,6 +6,7 @@ categories: [Business]
 tags: []
 draft: false
 description: ''
+thumbnail: "https://pub-2f5c7af1c303419a933069212bc25874.r2.dev/thumbnails/issue-techpawz/gemini-3-pro-prewview와의-대화.webp"
 ---
 
 와, 코드가 정말 방대하고 본격적이네요! `NiceGUI`를 활용한 데스크탑 앱 형태의 블로그 관리 도구라니, 아주 멋진 프로젝트입니다.

@@ -6,6 +6,7 @@ categories: [Business]
 tags: []
 draft: false
 description: ''
+thumbnail: "https://pub-2f5c7af1c303419a933069212bc25874.r2.dev/thumbnails/issue-techpawz/kde-connect-앱으로-스마트한-환경-구축하기-사용방법과-다운.webp"
 ---
 
 스마트폰으로 복사한 텍스트를 PC에서 바로 붙여넣기 하고 싶었던 적이 있으신가요? PC에서 작업 중인데 스마트폰 알림을 확인하려고 매번 폰을 들여다보는 게 번거로웠던 경험은요? **KDE Connect**는 이런 불편함을 한 번에 해결해주는 무료 오픈소스 앱입니다.

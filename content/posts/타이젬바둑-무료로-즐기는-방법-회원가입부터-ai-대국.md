@@ -6,6 +6,7 @@ categories: [Business]
 tags: []
 draft: false
 description: ''
+thumbnail: "https://pub-2f5c7af1c303419a933069212bc25874.r2.dev/thumbnails/issue-techpawz/타이젬바둑-무료로-즐기는-방법-회원가입부터-ai-대국.webp"
 ---
 
 바둑을 두고 싶은데 주변에 상대가 없어서 고민이신가요? 타이젬바둑은 전 세계 400만 명 이상의 회원이 이용하는 국내 최대 온라인 바둑 플랫폼입니다. 언제 어디서든 인터넷만 연결되면 실력이 비슷한 상대와 바둑을 둘 수 있습니다.

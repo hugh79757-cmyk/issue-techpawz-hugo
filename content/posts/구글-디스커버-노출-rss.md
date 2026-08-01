@@ -6,6 +6,7 @@ categories: [adsense]
 tags: []
 draft: false
 description: ''
+thumbnail: "https://pub-2f5c7af1c303419a933069212bc25874.r2.dev/thumbnails/issue-techpawz/구글-디스커버-노출-rss.webp"
 ---
 
 구글 디스커버 노출 RSS - 구글 디스커버(Google Discover)에 콘텐츠를 더 안정적으로 노출시키고 싶다면, **RSS 또는 Atom 피드와 메타태그 설정**을 반드시 확인해야 합니다. 디스커버는 사용자가 팔로우한 웹사이트의 피드를 기반으로 콘텐츠를 추천하는 구조도 함께 운영하고 있기 때문에, **피드 최적화는 노출 확률을 높이는 중요한 기술적 요소**입니다.

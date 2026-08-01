@@ -6,6 +6,7 @@ categories: [Business]
 tags: []
 draft: false
 description: ''
+thumbnail: "https://pub-2f5c7af1c303419a933069212bc25874.r2.dev/thumbnails/issue-techpawz/ai-서비스별-토큰-가격-비교-chatgpt-vs-claude-vs-gemini-모델별-완벽-정리.webp"
 ---
 
 AI API를 선택할 때 가장 중요한 기준 중 하나가 **가격**입니다. 같은 작업이라도 어떤 모델을 쓰느냐에 따라 비용이 10배 이상 차이 날 수 있습니다. 이 글에서는 2026년 1월 기준 OpenAI, Anthropic, Google의 주요 모델별 가격을 상세히 비교합니다. 각 모델의 특징과 용도별 추천까지 정리했으니 API 선택에 참고하세요.

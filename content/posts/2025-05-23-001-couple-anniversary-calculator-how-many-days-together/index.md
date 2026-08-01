@@ -15,7 +15,7 @@ Enter the date you started dating:
 
 {{< dday lang="en" >}}
 
-Do you remember exactly how many days you and your partner have been together? Every day is worth celebrating — and the **Couple Anniversary Calculator** makes it easy to track that journey together.
+Do you remember exactly how many days you and your partner have been together? Every day is worth celebrating — and the <strong>Couple Anniversary Calculator</strong> makes it easy to track that journey together.
 
 Just enter the date you started dating, and the tool instantly shows today's count plus all your upcoming milestone anniversaries.
 
@@ -25,26 +25,26 @@ Just enter the date you started dating, and the tool instantly shows today's cou
 
 ### 🗓️ 1. Automatic day counter from your start date
 
-Select your start date and press the button. **The calculator instantly shows how many days you've been together.** No math required — just pick the date and see the result.
+Select your start date and press the button. <strong>The calculator instantly shows how many days you've been together.</strong> No math required — just pick the date and see the result.
 
 ### 🎉 2. Milestone anniversary dates — 100, 200, 365 days and beyond
 
-The tool automatically calculates your upcoming landmarks: 100 days, 200 days, 300 days, your first anniversary (365 days), 500 days, and 1,000 days. **Use these as reminders for surprise celebrations** and never miss a special occasion again.
+The tool automatically calculates your upcoming landmarks: 100 days, 200 days, 300 days, your first anniversary (365 days), 500 days, and 1,000 days. <strong>Use these as reminders for surprise celebrations</strong> and never miss a special occasion again.
 
 ### 🔗 3. Auto-generated shareable link
 
-The calculator creates a unique link based on your date. **Send it to your partner** and they'll see the exact same anniversary page — a simple, romantic way to share the moment.
+The calculator creates a unique link based on your date. <strong>Send it to your partner</strong> and they'll see the exact same anniversary page — a simple, romantic way to share the moment.
 
 ### 💖 4. Floating hearts animation
 
-Every time you click the button, **little heart emojis float across the screen**, adding a warm, playful touch to the experience.
+Every time you click the button, <strong>little heart emojis float across the screen</strong>, adding a warm, playful touch to the experience.
 
 ---
 
 ## ✅ How to Use
 
 1. Select the date you started dating in the field above
-2. Click the **"How many days together? 💑"** button
+2. Click the <strong>"How many days together? 💑"</strong> button
 3. Check the results: today's day count and all upcoming milestones at a glance
 4. Copy the generated link and send it to your partner 💌
 

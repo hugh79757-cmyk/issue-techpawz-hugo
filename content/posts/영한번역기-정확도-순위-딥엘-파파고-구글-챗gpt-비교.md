@@ -6,6 +6,7 @@ categories: [Business]
 tags: []
 draft: false
 description: ''
+thumbnail: "https://pub-2f5c7af1c303419a933069212bc25874.r2.dev/thumbnails/issue-techpawz/영한번역기-정확도-순위-딥엘-파파고-구글-챗gpt-비교.webp"
 ---
 
 ## 영한번역기, 어디가 가장 정확할까

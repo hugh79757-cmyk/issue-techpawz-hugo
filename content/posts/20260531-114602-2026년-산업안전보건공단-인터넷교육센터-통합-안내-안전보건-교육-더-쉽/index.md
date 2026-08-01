@@ -6,4 +6,5 @@ draft: false
 tags: ["산업안전보건공단", "인터넷교육센터", "안전보건교육", "법정의무교육"]
 categories: ["산업안전", "안전보건"]
 source_file: 2157_산업안전보건공단_인터넷교육센터_바로가기.md
+thumbnail: "https://pub-2f5c7af1c303419a933069212bc25874.r2.dev/thumbnails/issue-techpawz/20260531-114602-2026년-산업안전보건공단-인터넷교육센터-통합-안내-안전보건-교육-더-쉽.webp"
 ---

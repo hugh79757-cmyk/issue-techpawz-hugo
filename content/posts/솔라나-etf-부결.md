@@ -6,6 +6,7 @@ categories: [Business]
 tags: []
 draft: false
 description: ''
+thumbnail: "https://pub-2f5c7af1c303419a933069212bc25874.r2.dev/thumbnails/issue-techpawz/솔라나-etf-부결.webp"
 ---
 
 솔라나 ETF 부결 가능성 - 암호화폐 시장은 최근 몇 년 사이 제도권 금융과의 경계를 허물며 빠르게 진화하고 있습니다. 그 중심에는 비트코인, 이더리움 현물 ETF의 정식 승인이 있으며, 이제는 솔라나(Solana)가 다음 주자로 주목받고 있습니다. 투자자들은 각 암호화폐의 ETF 승인 일정을 비교하며, 솔라나 ETF의 승인 가능성과 더불어 부결 가능성까지도 예의주시하고 있습니다. 이번 글에서는 각 ETF의 심사 및 승인 일정을 체계적으로 정리하고, 솔라나 ETF의 향후 승인 여부를 둘러싼 시나리오를 분석해보겠습니다.

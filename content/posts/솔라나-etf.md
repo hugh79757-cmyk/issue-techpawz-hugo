@@ -6,6 +6,7 @@ categories: [Business]
 tags: []
 draft: false
 description: ''
+thumbnail: "https://pub-2f5c7af1c303419a933069212bc25874.r2.dev/thumbnails/issue-techpawz/솔라나-etf.webp"
 ---
 
 솔라나 ETF - 암호화폐 시장은 점차 전통 금융과의 경계를 허물고 있습니다. 비트코인과 이더리움 ETF의 승인으로 제도권 편입이 본격화되면서, 투자자들의 관심은 다음 ETF 후보로 급부상한 솔라나(Solana)로 옮겨가고 있습니다. 특히 미국 증권거래위원회(SEC)가 솔라나 현물 ETF 심사를 연기하며, 시장은 그 배경과 향후 변화에 주목하고 있습니다. 본 포스트에서는 솔라나 ETF의 정의부터 심사 연기의 의미, 그리고 **승인 시 나타날 구체적 변화**까지 분석합니다.

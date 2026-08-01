@@ -6,6 +6,7 @@ categories: [Business]
 tags: []
 draft: false
 description: ''
+thumbnail: "https://pub-2f5c7af1c303419a933069212bc25874.r2.dev/thumbnails/issue-techpawz/xperp-완벽-입문-가이드-아파트-경리-실무자를-위한-기초.webp"
 ---
 
 아파트 관리사무소에 첫 출근한 경리 담당자라면 XPERP라는 생소한 프로그램 앞에서 막막함을 느끼셨을 것입니다. 전표는 어떻게 입력하는지, 관리비 부과는 어떤 순서로 진행하는지, 수납 처리는 어디서 하는지 하나하나 물어보기도 어렵고 매뉴얼만 봐서는 감이 잡히지 않습니다.

@@ -6,6 +6,7 @@ categories: [Business]
 tags: []
 draft: false
 description: ''
+thumbnail: "https://pub-2f5c7af1c303419a933069212bc25874.r2.dev/thumbnails/issue-techpawz/chatgpt-해지-구독-취소-및-결제-해지-방법-단계별-안내.webp"
 ---
 
 ChatGPT를 이용하다 보면 한동안은 유용하지만, 일정 시점에는 요금제 해지나 결제 취소가 필요할 때가 있습니다. ChatGPT Plus(유료 버전)은 자동 결제 방식이라 별도로 취소하지 않으면 매월 구독료가 부과되기 때문에, **정확한 해지 절차**를 아는 것이 중요합니다. 오늘은 ChatGPT 해지 방법을 **PC / 모바일 / iOS 앱별로 단계별**로 정리했습니다.

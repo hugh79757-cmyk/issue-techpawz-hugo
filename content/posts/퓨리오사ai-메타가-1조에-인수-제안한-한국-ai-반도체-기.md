@@ -6,6 +6,7 @@ categories: [Business]
 tags: []
 draft: false
 description: ''
+thumbnail: "https://pub-2f5c7af1c303419a933069212bc25874.r2.dev/thumbnails/issue-techpawz/퓨리오사ai-메타가-1조에-인수-제안한-한국-ai-반도체-기.webp"
 ---
 
 [퓨리오사AI 공식 홈페이지](https://www.furiosa.ai)

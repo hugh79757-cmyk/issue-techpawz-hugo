@@ -6,6 +6,7 @@ categories: [Business]
 tags: []
 draft: false
 description: ''
+thumbnail: "https://pub-2f5c7af1c303419a933069212bc25874.r2.dev/thumbnails/issue-techpawz/램-가격-급등락-이유-반도체-시장-흐름과-pc-업그레이드.webp"
 ---
 
 [SK하이닉스 뉴스룸](https://news.skhynix.co.kr)

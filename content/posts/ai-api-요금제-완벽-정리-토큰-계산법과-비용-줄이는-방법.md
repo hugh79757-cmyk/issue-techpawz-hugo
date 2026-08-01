@@ -6,6 +6,7 @@ categories: [Business]
 tags: []
 draft: false
 description: ''
+thumbnail: "https://pub-2f5c7af1c303419a933069212bc25874.r2.dev/thumbnails/issue-techpawz/ai-api-요금제-완벽-정리-토큰-계산법과-비용-줄이는-방법.webp"
 ---
 
 ChatGPT, Claude, Gemini 같은 AI 서비스를 API로 사용하면 **토큰** 단위로 요금이 부과됩니다. 토큰이 무엇인지 모르면 예상치 못한 비용이 발생할 수 있습니다. 이 글에서는 토큰의 개념부터 계산 방법, 그리고 비용을 줄이는 실전 팁까지 정리합니다. AI API를 처음 사용하거나 비용 관리가 필요한 분들에게 도움이 될 것입니다.

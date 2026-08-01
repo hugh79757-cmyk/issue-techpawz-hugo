@@ -6,6 +6,7 @@ categories: [Business]
 tags: []
 draft: false
 description: ''
+thumbnail: "https://pub-2f5c7af1c303419a933069212bc25874.r2.dev/thumbnails/issue-techpawz/puk-잠금해제.webp"
 ---
 
 PUK 잠금해제 방법 총정리 - 휴대폰을 사용하다 보면 SIM 카드가 갑자기 잠기는 상황을 경험할 수 있습니다. 특히 PIN 번호를 여러 번 틀릴 경우, **PUK(Personal Unblocking Key) 코드 입력**을 요구하며 SIM 사용이 불가능해지기도 합니다. 이번 글에서는 PUK 코드가 무엇인지, 어떻게 확인하고 입력하는지, 그리고 만약 코드까지 모두 틀렸을 경우 어떻게 대처해야 하는지까지 정리해드립니다.

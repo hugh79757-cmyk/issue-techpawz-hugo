@@ -6,6 +6,7 @@ draft: false
 tags: ["에어팟실시간번역", "아이폰15프로기능", "AppleIntelligence번역", "iOS26"]
 categories: ["기술", "여행", "생활"]
 featureimage: "https://img-issue.techpawz.com/images/issue-techpawz/20260618-011614-2026년-에어팟-실시간-번역-아이폰15Pro-기기별-완벽-가이드/thumbnail.webp"
+thumbnail: "https://pub-2f5c7af1c303419a933069212bc25874.r2.dev/thumbnails/issue-techpawz/20260618-011614-2026년-에어팟-실시간-번역-아이폰15Pro-기기별-완벽-가이드.webp"
 ---
 에어팟과 아이폰의 조합이 이제는 단순한 무선 이어폰을 넘어 실시간 통역사의 역할까지 수행하게 되었습니다. Apple Intelligence를 기반으로 한 에어팟 실시간 번역(Live Translation) 기능은 2025년 9월 iOS 26과 함께 처음 공개되었고, 같은 해 11월 iOS 26.1 업데이트를 통해 한국어 지원이 정식으로 추가되었습니다. 해외여행 중 현지인과의 대화, 외국어 통화, 비즈니스 미팅에서 실질적인 언어 장벽을 허물 수 있는 이 기능의 정확한 지원 조건과 사용법을 Apple 공식 자료를 바탕으로 상세히 안내합니다.
 

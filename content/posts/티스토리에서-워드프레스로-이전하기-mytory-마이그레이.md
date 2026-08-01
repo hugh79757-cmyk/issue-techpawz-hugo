@@ -6,6 +6,7 @@ categories: [Business]
 tags: []
 draft: false
 description: ''
+thumbnail: "https://pub-2f5c7af1c303419a933069212bc25874.r2.dev/thumbnails/issue-techpawz/티스토리에서-워드프레스로-이전하기-mytory-마이그레이.webp"
 ---
 
 티스토리에서 워드프레스로 블로그를 이전하는 방법은 여러 가지가 있습니다. 보통 **티스토리 백업 파일을 이용해 임포트**하거나, **스크래퍼 프로그램으로 공개된 글을 크롤링**해 옮기는 방식이 사용됩니다. 하지만 백업 파일을 직접 임포트하는 과정은 꽤 복잡하고 서버 제약이 많습니다. 그래서 이번 글에서는 [Mytory님](https://mytory.net/)이 개발한 ‘티스토리 마이그레이션 전용 플러그인’을 활용해 간단히 이전하는 방법을 소개합니다.

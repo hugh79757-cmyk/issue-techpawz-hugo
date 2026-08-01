@@ -6,6 +6,7 @@ categories: [Business]
 tags: []
 draft: false
 description: ''
+thumbnail: "https://pub-2f5c7af1c303419a933069212bc25874.r2.dev/thumbnails/issue-techpawz/cpu-z-한글-파일-다운로드-내-컴퓨터-사양-확인하는-가장.webp"
 ---
 
 ## 내 컴퓨터 사양이 궁금할 때 가장 먼저 찾게 되는 프로그램

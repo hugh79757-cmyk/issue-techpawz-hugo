@@ -6,6 +6,7 @@ categories: [Business]
 tags: []
 draft: false
 description: ''
+thumbnail: "https://pub-2f5c7af1c303419a933069212bc25874.r2.dev/thumbnails/issue-techpawz/케이브덕-무료-사용법부터-유료-플랜까지-ai-채팅-입문.webp"
 ---
 
 ## 30만 명이 선택한 AI 캐릭터 채팅 플랫폼

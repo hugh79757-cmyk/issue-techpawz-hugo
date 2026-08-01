@@ -6,6 +6,7 @@ categories: [Business]
 tags: []
 draft: false
 description: ''
+thumbnail: "https://pub-2f5c7af1c303419a933069212bc25874.r2.dev/thumbnails/issue-techpawz/국내-로봇etf-vs-해외-로봇etf-수익률-비교와-투자-전략.webp"
 ---
 
 로봇 산업에 투자하려고 할 때 국내 ETF를 살지 해외 ETF를 살지 고민되는 분들이 많습니다. 국내에도 다양한 로봇ETF가 상장되어 있고, 미국에는 BOTZ, ROBO 같은 대형 로봇ETF가 있습니다. 각각의 특징과 장단점이 다르기 때문에 본인의 투자 목적에 맞게 선택해야 합니다.

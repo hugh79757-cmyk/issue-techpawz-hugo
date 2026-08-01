@@ -39,15 +39,15 @@ Free Video Cutter는 무료로 사용할 수 있다는 가장 큰 장점이 있�
 
 ## 자주 묻는 질문
 
-**Q1. Free Video Cutter는 유료인가요?**
+<strong>Q1. Free Video Cutter는 유료인가요?</strong>
 
 아니요, Free Video Cutter는 완전 무료로 사용할 수 있습니다. 유료 버전 없이도 기본적인 동영상 자르기 기능을 충분히 활용할 수 있습니다.
 
-**Q2. Free Video Cutter로 만든 파일은 어떤 형식으로 저장되나요?**
+<strong>Q2. Free Video Cutter로 만든 파일은 어떤 형식으로 저장되나요?</strong>
 
 Free Video Cutter는 다양한 영상 파일 형식을 지원하며, 일반적으로 MP4 형식으로 저장됩니다 (지원되는 형식은 프로그램 버전에 따라 다를 수 있음).
 
-**Q3. Free Video Cutter를 사용하려면 특별한 기술이나 경험이 필요한가요?**
+<strong>Q3. Free Video Cutter를 사용하려면 특별한 기술이나 경험이 필요한가요?</strong>
 
 아니요, Free Video Cutter는 매우 직관적인 인터페이스를 가지고 있어 특별한 기술이나 경험 없이도 쉽게 사용할 수 있습니다.
 
