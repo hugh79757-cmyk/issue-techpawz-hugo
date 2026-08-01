@@ -105,7 +105,7 @@
       <input type="date" id="startdate-{{ $lang }}" class="dday-date-input" lang="{{ $lang }}">
     </div>
 
-    <button class="dday-btn" onclick="calculateLoveDays_{{ $lang }}()">
+    <button class="dday-btn" onclick="calculateLoveDays_ko()">
       {{ index $t "btn" }}
     </button>
 
@@ -118,7 +118,7 @@
 
 <script>
 (function() {
-  var LANG = {{ $lang | jsonify }};
+  var LANG = "ko";
   var T = {
     empty:       {{ index $t "empty"       | jsonify }},
     result_pre:  {{ index $t "result_pre"  | jsonify }},
