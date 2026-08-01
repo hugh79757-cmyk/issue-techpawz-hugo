@@ -7,3 +7,8 @@ all_slugs.txt
 *.wpress
 *.xml
 themes/
+
+.DS_Store
+*.bak
+*.bak.*
+public_test/
