@@ -1,76 +1,54 @@
-baseURL = "https://issue.techpawz.com/"
-languageCode = "ko-KR"
+baseURL                = "https://issue.techpawz.com/"
+languageCode           = "ko-KR"
 defaultContentLanguage = "ko"
-title = "테크포우즈 Issue"
-theme = "blowfish"
-themesDir = "/Users/twinssn/Projects/shared-themes"
+title                  = "테크포우즈 Issue"
+theme                  = "blowfish"
+themesDir              = "/Users/twinssn/Projects/shared-themes"
+summaryLength          = 0
+
 [pagination]
   pagerSize = 10
+
+[outputs]
+  home    = ["HTML", "RSS", "JSON", "Sitemap"]
+  section = ["HTML"]
+  page    = ["HTML"]
 
 [permalinks]
   posts = "/:slug/"
 
+[sitemap]
+  changefreq    = "daily"
+  priority      = 0.8
+  filename      = "sitemap.xml"
+  excludedKinds = ["taxonomy", "term", "section"]
+
+[markup]
+  [markup.highlight]
+    noClasses = false
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+    [markup.goldmark.extensions]
+      strikethrough = false
+
 [taxonomies]
   category = "categories"
-  tag = "tags"
+  tag      = "tags"
+  author   = "authors"
 
 [params]
-  colorScheme = "ocean"
-  defaultAppearance = "light"
-  autoSwitchAppearance = true
-  enableSearch = true
-  enableCodeCopy = true
-  mainSections = ["posts"]
-
 [params.homepage]
-  layout = "card"
+  layout = "background"
   showRecent = true
-  recentLimit = 10
 
 [params.article]
-  showDate = true
-  showAuthor = false
-  showReadingTime = true
-  showTableOfContents = true
-  showTaxonomies = true
-  showWordCount = false
+  showTableOfContents = false
 
-[params.footer]
-  showCopyright = true
+[params.advertisement]
+  adsense = "ca-pub-8772455780561463"
+  topSlot = "6685009950"
+  inArticleSlot = "6685009950"
 
-[outputs]
-  home = ["HTML", "RSS", "JSON"]
-
-[markup.goldmark.renderer]
-  unsafe = true
-
-[minify]
-  disableJS = true
-
-ignoreLogs = ['warning-goldmark-raw-html']
-
-[author]
-  name = "테크포우즈"
-
-[params.header]
-  showLanguageToggle = false
-
-[related]
-  threshold = 0
-  toLower = false
-
-  [[related.indices]]
-    name = "tags"
-    weight = 100
-
-  [[related.indices]]
-    name = "categories"
-    weight = 100
-
-  [[related.indices]]
-    name = "series"
-    weight = 50
-
-  [[related.indices]]
-    name = "date"
-    weight = 10
+[params.customCSS]
+  css = ["css/custom.css"]
