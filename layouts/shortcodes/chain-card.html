@@ -1,0 +1,5 @@
+<div style="padding:1em;margin:2em 0;border-radius:8px;background:#DC2626;text-align:center;">
+  <p style="font-size:0.85em;color:rgba(255,255,255,0.85);margin:0 0 0.3em 0;">다음 글</p>
+  <p style="font-size:1.05em;font-weight:bold;color:#fff;margin:0 0 0.5em 0;">{{ .Get "title" }}</p>
+  <a href="{{ .Get "url" }}" style="display:inline-block;padding:0.5em 1.5em;background:rgba(255,255,255,0.2);color:#fff;border-radius:4px;text-decoration:none;font-weight:600;">{{ .Get "cta" | default "더 알아보기 →" }}</a>
+</div>
